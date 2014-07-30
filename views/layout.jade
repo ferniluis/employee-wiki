@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/foundation/css/foundation.min.css')
+    link(rel='stylesheet', href='/foundation/css/normalize.css')
+    script(src="/foundation/js/foundation.min.js")
+  body
+    .menu-top
+      -if(typeof user != "undefined"){
+        span Bienvenido #{user.nombre} 
+        a(href="/logout") Salir
+      -}
+    block content

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	div(class="large-12 columns")
+		div(class="row")
+			div(class="large-12 medium-12 small-4 columns")
+				form#login(method="post",action="")
+					label(for='email') E-Mail
+					input#email(type="text", name='email', placeholder='email', value='')
+					label(for='password') Password
+					input#pwd(name='password', placeholder='Password', value='', type='password')
+					input#send(type='submit', value='Log In', class="small button")
